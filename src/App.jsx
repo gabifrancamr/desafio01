@@ -67,7 +67,7 @@ function App() {
     setHeaderContent(e.target.value)
   }
 
-  function handleChangeBodyContext(e) {
+  function handleChangeBodyContent(e) {
     setBodyContent(e.target.value)
   }
 
@@ -119,7 +119,7 @@ function App() {
                   required
                   rows="10"
                   value={bodyContent}
-                  onChange={handleChangeBodyContext} />
+                  onChange={handleChangeBodyContent} />
               </div>
             )}
 

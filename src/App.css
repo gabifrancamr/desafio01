@@ -1,0 +1,50 @@
+form div:nth-child(n+2) {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem 0;
+}
+
+.method {
+  display: flex;
+  gap: 0.5rem;
+}
+
+h1,
+h2,
+span,
+label {
+  color: #66184d;
+  font-weight: bold;
+}
+
+select {
+  border-radius: 4px;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  border: 1px solid #66184d;
+  border-radius: 8px;
+}
+
+button {
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #952472;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #66184d;
+}

@@ -89,18 +89,37 @@ function App() {
 
             <div>
               <label htmlFor="url">URL:</label>
-              <input type="text" name="url" id="url" placeholder='Digite a URL' value={method === 'get' ? urlGet : urlPost} onChange={method === 'get' ? handleChangeUrlGet : handleChangeUrlPost} />
+              <input
+                type="text"
+                name="url"
+                id="url"
+                required
+                placeholder='Digite a URL'
+                value={method === 'get' ? urlGet : urlPost}
+                onChange={method === 'get' ? handleChangeUrlGet : handleChangeUrlPost} />
             </div>
 
             <div>
               <label htmlFor="headers">Headers (JSON):</label>
-              <textarea name="headers" id="headers" rows="10" value={headerContent} onChange={handleChangeHeaderContext} />
+              <textarea
+                name="headers"
+                id="headers"
+                required
+                rows="10"
+                value={headerContent}
+                onChange={handleChangeHeaderContext} />
             </div>
 
             {method === 'post' && (
               <div>
                 <label htmlFor="body">Corpo da Requisição (JSON - Apenas para POSTs):</label>
-                <textarea name="body" id="body" rows="10" value={bodyContent} onChange={handleChangeBodyContext} />
+                <textarea
+                  name="body"
+                  id="body"
+                  required
+                  rows="10"
+                  value={bodyContent}
+                  onChange={handleChangeBodyContext} />
               </div>
             )}
 
